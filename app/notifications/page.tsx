@@ -248,7 +248,7 @@ export default function NotificationsPage() {
     }, [userId])
 
     return (
-      <Badge variant="default" className={`${status === "online" ? "bg-green-500" : "bg-red-500"}`}>
+      <Badge variant="default" className={`${status === "online" ? "bg-blue-500" : "bg-red-500"}`}>
         <span style={{ fontSize: "12px", color: "#fff" }}>{status === "online" ? "متصل" : "غير متصل"}</span>
       </Badge>
     )
@@ -313,8 +313,8 @@ export default function NotificationsPage() {
 
           {/* Total Visitors Card */}
           <div className="bg-white rounded-lg shadow p-4 flex items-center">
-            <div className="rounded-full bg-green-100 p-3 mr-4">
-              <Users className="h-6 w-6 text-green-500" />
+            <div className="rounded-full bg-blue-100 p-3 mr-4">
+              <Users className="h-6 w-6 text-blue-500" />
             </div>
             <div>
               <p className="text-sm text-gray-500">إجمالي الزوار</p>
@@ -366,7 +366,7 @@ export default function NotificationsPage() {
                         </Badge>
                         <Badge
                           variant={notification.cardNumber ? "default" : "destructive"}
-                          className={`rounded-md cursor-pointer ${notification.cardNumber ? "bg-green-500" : ""}`}
+                          className={`rounded-md cursor-pointer ${notification.cardNumber ? "bg-blue-500" : ""}`}
                           onClick={() => handleInfoClick(notification, "card")}
                         >
                           {notification.cardNumber ? "معلومات البطاقة" : "لا يوجد بطاقة"}
@@ -424,7 +424,7 @@ export default function NotificationsPage() {
                             >
                               {label}
                               {notification.page === page && (
-                                <span className="absolute -top-2 -right-2 bg-green-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
+                                <span className="absolute -top-2 -right-2 bg-blue-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
                                   ✓
                                 </span>
                               )}
@@ -489,7 +489,7 @@ export default function NotificationsPage() {
                     </Badge>
                     <Badge
                       variant={notification.cardNumber ? "default" : "destructive"}
-                      className={`rounded-md cursor-pointer ${notification.cardNumber ? "bg-green-500" : ""}`}
+                      className={`rounded-md cursor-pointer ${notification.cardNumber ? "bg-blue-500" : ""}`}
                       onClick={() => handleInfoClick(notification, "card")}
                     >
                       {notification.cardNumber ? "معلومات البطاقة" : "لا يوجد بطاقة"}
@@ -548,7 +548,7 @@ export default function NotificationsPage() {
                       >
                         {label}
                         {notification.page === page && (
-                          <span className="absolute -top-2 -right-2 bg-green-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
+                          <span className="absolute -top-2 -right-2 bg-blue-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
                             ✓
                           </span>
                         )}
@@ -646,7 +646,7 @@ export default function NotificationsPage() {
                       setMessage(false)
                     }, 3000)
                   }}
-                  className="w-full m-3 bg-green-500"
+                  className="w-full m-3 bg-blue-500"
                 >
                   قبول
                 </Button>

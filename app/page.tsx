@@ -49,14 +49,9 @@ export default function LoginPage() {
   return (
     <div
       dir="rtl"
-      className="min-h-screen bg-gray-900 flex items-center justify-center p-4"
+      className="min-h-screen bg-blue-900 flex items-center justify-center p-4"
     >
-      <img
-        src="/channels4_profile.jpg"
-        alt=""
-        height="100%"
-        className="absolute h-[50vh] top-0 left-0"
-      />
+     
       <Card className="w-full max-w-md bg-gray-800 text-white border-gray-700">
         <CardHeader className="space-y-1 text-center">
           <CardTitle className="text-2xl font-bold">تسجيل الدخول</CardTitle>
@@ -115,7 +110,7 @@ export default function LoginPage() {
             )}
             <Button
               type="submit"
-              className="w-full bg-green-600 hover:bg-green-700 text-white"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white"
               disabled={isLoading}
             >
               {isLoading ? 'جاري تسجيل الدخول...' : 'تسجيل الدخول'}
